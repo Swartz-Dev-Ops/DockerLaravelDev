@@ -28,3 +28,10 @@ data should be created in the /mysql directory.
 access laravel at http://localhost:8080
 
 Enjoy!
+
+-- Other Notes
+Enable Auth
+composer require laravel/ui
+php artisan ui vue --auth
+docker-compose exec php php artisan migrate
+docker-compose exec php php artisan ui:auth
